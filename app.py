@@ -33,12 +33,13 @@ container_client = blob_service_client.get_container_client(BLOB_CONTAINER_NAME)
 
 st.title("📄 Caricatore Documenti su Azure")
 
-tipi_disponibili = get_distinct_tipi()
-if tipi_disponibili:
-    tipo = st.selectbox("Seleziona il tipo di documento", tipi_disponibili)
-else:
-    st.warning("⚠️ Nessun tipo trovato nel database.")
+#tipi_disponibili = get_distinct_tipi()
+#if tipi_disponibili:
+#    tipo = st.selectbox("Seleziona il tipo di documento", tipi_disponibili)
+#else:
+#    st.warning("⚠️ Nessun tipo trovato nel database.")
 
+tipo = st.selectbox("Seleziona il tipo di documento", ["Normativa Istituzionale EU","Normativa Istituzionale Italiana","Non Istituzionali","Interno Banche","Report Generati"])
 uploaded_file = st.file_uploader("Carica un documento (PDF, DOCX, TXT)", type=["pdf", "docx", "txt"])
 
 if uploaded_file:

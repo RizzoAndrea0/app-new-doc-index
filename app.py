@@ -10,7 +10,7 @@ BLOB_CONTAINER_NAME = "ict-final"
 
 AZURE_SEARCH_ENDPOINT = "https://ict-aisearch.search.windows.net"
 AZURE_SEARCH_API_KEY = "IWU3BTSzC9Vv3JrbPSss1JNwjP5jroYbThxe1cwB3BAzSeDMhVWE"
-INDEXER_NAME = "ict-index-meta-2"
+INDEXER_NAME = "ict-indexer-meta-2"
 
 def get_distinct_tipi():
     server = 'sqlserverict.database.windows.net'  
